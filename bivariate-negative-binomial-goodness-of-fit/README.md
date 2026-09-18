@@ -1,24 +1,33 @@
-# 📊 Test de Ajuste Estadístico: Distribución Binomial Negativa Bivariada
+# 📊 Test de Ajuste y Robustez Estadística: Distribución Binomial Negativa Bivariada
 
-Este módulo contiene scripts y funciones desarrolladas en **R** para validar qué tan bien se ajusta un conjunto de datos reales a un modelo estadístico de **Binomial Negativa Bivariada**.
-
----
-
-## 💡 ¿Para qué sirve este análisis? (En palabras sencillas)
-En muchas industrias (como finanzas, riesgo o seguros) necesitamos analizar dos variables de conteo al mismo tiempo que están conectadas entre sí (por ejemplo: número de reclamos e impagos). 
-
-Este proyecto implementa una **prueba de bondad de ajuste (*Goodness-of-Fit*)** para verificar si la distribución elegida refleja de manera precisa la realidad de los datos antes de usarlos en modelos predictivos o de riesgo.
+Este módulo contiene algoritmos desarrollados en **R** para la construcción, evaluación de potencia y validación de pruebas de bondad de ajuste (*Goodness-of-Fit*) sobre modelos de **Binomial Negativa Bivariada**, aplicados a datos de conteo con dependencia y sobredispersión.
 
 ---
 
-## 🔬 Contenido del Módulo
-
-* 📐 **Evaluación de Ajuste (Goodness-of-Fit Test):** Algoritmos en R para comprobar numéricamente si los datos siguen la distribución supuesta.
-* 📈 **Modelado de Datos de Conteo:** Trata la sobredispersión y la dependencia entre dos variables simultáneas.
-* 📊 **Simulación y Validación:** Funciones personalizadas para ejecutar las pruebas estadísticas y graficar resultados.
+## 💡 Relevancia y Aplicación en Riesgo y Finanzas
+En modelado de riesgos, seguros y finanzas cuantitativas, es vital analizar dos variables correlacionadas (ej. frecuencia de reclamos simultáneos o eventos de impago acoplados). Este proyecto evalúa la confiabilidad del test estadístico para garantizar que la distribución supuesta responda con precisión antes de ser usada en producción.
 
 ---
 
-## 🛠️ Tecnologías
-* **Lenguaje:** R (`.R` scripts).
-* **Análisis Estadístico:** Funciones personalizadas y paquetes estadísticos de R para distribuciones multivariadas.
+## 🔬 Módulos y Metodología en R
+
+### 1. Calibración y Error Tipo I (Control de Falsos Positivos)
+Evaluación empírica de la tasa de error Tipo I bajo tres métodos de estimación de parámetros:
+* **Método de los Momentos (MOM)**
+* **Máxima Verosimilitud (MLE)**
+* **Método de Doble Cero (Zero-Proportion)**
+
+### 2. Análisis de Potencia del Test (Power Analysis)
+Estudio de simulación Monte Carlo para medir la capacidad del test de detectar desviaciones frente a diversas familias de **distribuciones bivariadas alternativas**:
+* Bivariada de **Hermite**
+* Bivariada **Gaussiana Inversa**
+* Bivariada de **Serie Logarítmica**
+* Bivariada **Binomial Negativa**
+* Bivariada **Neyman Tipo A**
+* Bivariada de **Poisson**
+
+---
+
+## 🛠️ Tecnologías y Herramientas
+* **Lenguaje:** R (`.R` scripts modularizados).
+* **Técnicas:** Simulación Monte Carlo, Estimación por Máxima Verosimilitud (MLE), Pruebas de Hipótesis y Ajuste de Distribuciones Multivariadas.
