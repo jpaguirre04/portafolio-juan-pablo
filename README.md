@@ -1,10 +1,10 @@
 # 💼 Portafolio de Ciencia de Datos & Analítica Cuantitativa — Juan Pablo Aguirre
 
-Bienvenido a mi portafolio profesional en GitHub. En este repositorio congrego proyectos y soluciones aplicadas en **Finanzas Cuantitativas**, **Machine Learning Operativo en AgTech** y **Estadística Avanzada / Simulación**.
+Bienvenido a mi portafolio profesional en GitHub. En este repositorio congrego proyectos y soluciones aplicadas en **Finanzas Cuantitativas**, **Machine Learning Operativo (AgTech)** y **Estadística Avanzada / Simulación**.
 
 ---
 
-## 📂 Módulos del Portafolio
+## 📂 Módulos de Código y Pipelines
 
 ### 1. 📈 Finanzas Cuantitativas & Análisis Macroeconómico
 * 💵 **[macro-liquidity-quadrant-hedgeye](./macro-liquidity-quadrant-hedgeye):** Modelo cuantitativo en Python conectado a la **FRED API** (Federal Reserve Bank of St. Louis) para mapear regímenes de Crecimiento (**GDP**) e Inflación (**CPI**) bajo el framework de 4 cuadrantes (estilo Hedgeye) para la gestión de liquidez.
@@ -25,7 +25,13 @@ Bienvenido a mi portafolio profesional en GitHub. En este repositorio congrego p
 | **Data & ML:** | Pandas, NumPy, Scikit-learn, Statsmodels |
 | **APIs & Data Access:** | FRED API, Conexiones a BD Relacionales (`QUEUE`, SQLite, PostgreSQL) |
 | **Estadística / Quant:** | Simulaciones Monte Carlo, Inferencia Bayesiana/Frecuentista, Series de Tiempo |
-| **Entornos & Control:** | Git, GitHub, Jupyter Notebooks |
+| **Entornos & Control:** | Git, GitHub, Spyder IDE, RStudio |
+
+---
+
+## 🔬 Publicaciones Científicas y Respaldo Teórico
+* 📑 **Axioms (2025):** Validation of Complex Probability Distributions (*Test de Bondad de Ajuste en R & Monte Carlo*).
+* 📚 **EduLearn (2023):** Psychometric & Ordinal Data Modeling.
 
 ---
 
