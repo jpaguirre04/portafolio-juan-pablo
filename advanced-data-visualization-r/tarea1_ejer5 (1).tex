@@ -1,0 +1,53 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[spanish]{babel}
+\usepackage[ansinew]{inputenc}
+\usepackage[right=1cm,left=2cm,top=1cm,bottom=1cm,headsep=0cm,footskip=0.5cm]{geometry}
+\usepackage[dvips]{graphicx}
+
+\begin{document}
+
+\title{ {\bf Tarea 1-Ejercicio 5}}
+\author{Profesor: Danilo Alvares}
+\date{\today}
+\maketitle
+{\bf Nombre: Juan Pablo Aguirre}\\
+
+
+\begin{enumerate}
+\item  Profesor en la  expresi\'on de estimaci\'on 
+\begin{eqnarray*}
+\hat{f}\left(x,y\right)&=& \frac{1}{n} \sum_{i=1}^{n} \frac{K\left( \frac{x_{i}-x}{h} \right)}{h}  \frac{K\left(\frac{y_{i}-y}{h}\right)}{h} =\frac{1}{n}\sum_{i=1}^{n} K_{h}\left(x_{i}-x\right) \,\, K_{h}\left(y_{i}-y\right)\\
+\hat{f}\left(x\right) &=&  \frac{1}{n} \sum_{i=1}^{n} \frac{K\left(\frac{x_{i}-x}{h}\right)}{h}=  \frac{1}{n}\sum_{i=1}^{n} K_{h}\left(x_{i}-x\right) 
+\end{eqnarray*}
+
+ reemplazando ambos t\'erminos  en el estimador $\hat{m}\left(x\right)$,  tenemos:
+\begin{eqnarray*}
+\hat{m}\left(x\right)&=& \int y \frac{\hat{f}\left( x,y\right)}{\hat{f}\left( x\right)} dy\\
+&=&  \int y \frac{\frac{1}{n}\sum_{i=1}^{n} K_{h}\left(x_{i}-x\right) \,\, K_{h}\left(y_{i}-y\right)}{\frac{1}{n}\sum_{i=1}^{n} K_{h}\left(x_{i}-x\right) } dy\\
+&=&  \frac{\sum_{i=1}^{n} K_{h}\left(x_{i}-x\right) \,\, \int y \,\, K_{h}\left(y_{i}-y\right)\,\, dy}{\sum_{i=1}^{n} K_{h}\left(x_{i}-x\right) } 
+\end{eqnarray*}
+
+
+de la \'ultima expresi\'on,  s\'olo observando $ \int y \,\, K_{h}\left(y_{i}-y\right) \,\, dy$, y aplicando propiedad simetr\'{i}a en la integral del {Kernel} {\bf K}.
+\begin{itemize}
+\item $K\left(w \right)=K\left(-w \right)$
+\item $\int K\left( w\right) dw=1$ 
+\item $\int w\, K\left( w\right) dw=0$
+\end{itemize}
+ $ \int y \,\, K_{h}\left(y_{i}-y\right) \,\, dy=\int y \,\, K_{h}\left(y-y_{i}\right) \,\, dy$ esto por simetr\'{i}a de la funci\'on {\bf K},\,\,\, y reemplazando  $w=y-y_{i}$ ; $dw=dy$, tenemos la integral siguiente:
+
+\begin{eqnarray*}
+\int y \,\, K_{h}\left(y-y_{i}\right) \,\, dy&=& \int \left( w+y_{i} \right) K\left(w\right) dw\\
+&=&   \int w\, K\left(w\right) dw + \int y_{i}\, K\left(w\right) dw =0+ y_{i}=y_{i}.
+\end{eqnarray*}
+y ahora reemplazando en $\hat{m}\left(x\right)$, nos da la expresi\'on de {\it Nadaraya-Watson}.
+\begin{eqnarray*}
+\hat{m}\left(x\right)&=&\frac{\sum_{i=1}^{n} y_{i} \,\, K_{h}\left(x_{i}-x\right)}{\sum_{i=1}^{n} K_{h}\left(x_{i}-x\right) } = \frac{\sum_{i=1}^{n} y_{i} \,\, \frac{K\left(\frac{x_{i}-x}{h}\right)}{h}}{\sum_{i=1}^{n} \frac{K\left(\frac{x_{i}-x}{h}\right)}{h}} \\
+\end{eqnarray*}
+
+\end{enumerate}
+
+
+
+
+\end{document}
