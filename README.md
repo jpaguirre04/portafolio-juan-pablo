@@ -13,7 +13,7 @@ Bienvenido a mi portafolio profesional en GitHub. En este repositorio congrego p
 * 🌽 **[crop-forecasting-pollination-harvest-double-haploid](./crop-forecasting-pollination-harvest-double-haploid):** Pipeline de datos en Python conectado a la base de datos operativa `QUEUE` para pronosticar fechas de polinización y cosecha en programas de mejoramiento vegetal (Doble Haploide), optimizando la planificación de capacidad y dotación de personal.
 
 ### 3. 📊 Estadística Avanzada & Pruebas de Hipótesis
-* 🔬 **[bivariate-negative-binomial-goodness-of-fit](./bivariate-negative-binomial-goodness-of-fit):** Algoritmos y simulaciones Monte Carlo en **R** para evaluar pruebas de bondad de ajuste sobre la distribución Binomial Negativa Bivariada. Incluye control de Error Tipo I (MLE, MOM, Doble Cero) y análisis de potencia frente a 6 distribuciones bivariadas alternativas.
+* 🔬 **[bivariate-negative-binomial-goodness-of-fit](./bivariate-negative-binomial-goodness-of-fit):** Algoritmos y simulaciones Monte Carlo en **R** para evaluar pruebas de bondad de ajuste sobre la distribución Binomial Negativa Bivariada. Incluye control de Error Tipo I (MLE, MOM, Doble Cero) y análisis de potencia frente a 6 distribuciones bivariadas alternativas, ejecutado en el supercomputador Leftraru (NLHPC / CMM, U. de Chile).
 
 ---
 
@@ -25,7 +25,7 @@ Bienvenido a mi portafolio profesional en GitHub. En este repositorio congrego p
 | **Data & ML:** | Pandas, NumPy, Scikit-learn, Statsmodels |
 | **APIs & Data Access:** | FRED API, Conexiones a BD Relacionales (`QUEUE`, SQLite, PostgreSQL) |
 | **Estadística / Quant:** | Simulaciones Monte Carlo, Inferencia Bayesiana/Frecuentista, Series de Tiempo |
-| **Entornos & Control:** | Git, GitHub, Spyder IDE, RStudio |
+| **Entornos & Control:** | Git, GitHub, Spyder IDE, RStudio, HPC / Leftraru (NLHPC) |
 
 ---
 
