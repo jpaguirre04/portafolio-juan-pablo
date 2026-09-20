@@ -28,6 +28,15 @@ Estudio de simulación Monte Carlo para medir la capacidad del test de detectar 
 
 ---
 
+## 🖥️ Infraestructura e Escalabilidad Computacional (HPC)
+Debido a la alta complejidad algorítmica y la cantidad masiva de iteraciones requeridas para las simulaciones Monte Carlo, el procesamiento y cómputo paralelo de este proyecto fue ejecutado en el **supercomputador Leftraru**, alojado en el **Centro de Modelamiento Matemático (CMM)** de la Universidad de Chile y gestionado por el **NLHPC** (Laboratorio Nacional de Computación de Alto Rendimiento).
+
+* **Entorno de ejecución:** Clúster HPC / Slurm Workload Manager.
+* **Procesamiento:** Computación paralela intensiva para optimización por Máxima Verosimilitud (MLE) y evaluación de potencia estadística sobre múltiples distribuciones alternativas.
+
+---
+
 ## 🛠️ Tecnologías y Herramientas
 * **Lenguaje:** R (`.R` scripts modularizados).
-* **Técnicas:** Simulación Monte Carlo, Estimación por Máxima Verosimilitud (MLE), Pruebas de Hipótesis y Ajuste de Distribuciones Multivariadas.
+* **Infraestructura:** Supercomputador **Leftraru** (CMM - NLHPC / U. de Chile).
+* **Técnicas:** Simulación Monte Carlo, Computación de Alto Rendimiento (HPC), Estimación por Máxima Verosimilitud (MLE), Pruebas de Hipótesis y Ajuste de Distribuciones Multivariadas.
